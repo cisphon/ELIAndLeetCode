@@ -9,6 +9,7 @@ public class IntersectionOfTwoArraysII {
         int[] intersection = intersect(nums1, nums2);
     }
 
+    // mine is actually faster than the top voted solution.
     public static int[] intersect(int[] nums1, int[] nums2) { // O(N * log N)
         Arrays.sort(nums1); // 1,1,2,2
         Arrays.sort(nums2); // 2,2
@@ -40,8 +41,10 @@ public class IntersectionOfTwoArraysII {
         ArrayList<Integer> result = new ArrayList<Integer>();
         for(int i = 0; i < nums1.length; i++)
         {
-            if(map.containsKey(nums1[i])) map.put(nums1[i], map.get(nums1[i])+1);
-            else map.put(nums1[i], 1);
+            if(map.containsKey(nums1[i]))
+                map.put(nums1[i], map.get(nums1[i])+1);
+            else
+                map.put(nums1[i], 1);
         }
 
         for(int i = 0; i < nums2.length; i++)
