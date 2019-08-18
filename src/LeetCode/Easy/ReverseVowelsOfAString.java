@@ -35,12 +35,6 @@ public class ReverseVowelsOfAString {
         return new String(chars);
     }
 
-    public static void swap(char[] chars, int i, int j) {
-        char temp = chars[i];
-        chars[i] = chars[j];
-        chars[j] = temp;
-    }
-
     // I see a two pointer approach, it's 65ms. pretty slow.
     public static String reverseVowels(String s) {
         StringBuilder stringBuilder = new StringBuilder(s); // this allows for mutability.
@@ -130,6 +124,13 @@ public class ReverseVowelsOfAString {
         return new String(chars);
     }
 
+    public static void swap(char[] chars, int i, int j) {
+        char temp = chars[i];
+        chars[i] = chars[j];
+        chars[j] = temp;
+    }
+
+    // this is slow af.
     public static void swap(StringBuilder s, int lo, int hi) {
         char temp = s.charAt(lo);
         s.replace(lo, lo + 1, "" + s.charAt(hi));
