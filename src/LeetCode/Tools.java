@@ -25,4 +25,15 @@ public class Tools {
             printListNode(curr.next);
         }
     }
+
+    public static String OCDPrintArray(int[] list) {
+        String s = "{";
+        for (int i : list) {
+            s = s + i + ", ";
+        }
+        s = s.substring(0, s.length()-2);
+        s += "}";
+
+        return s;
+    }
 }

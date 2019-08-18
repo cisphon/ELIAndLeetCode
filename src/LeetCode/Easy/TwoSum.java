@@ -13,8 +13,6 @@ public class TwoSum {
         printArray(sol);
     }
 
-
-
     public int[] twoSum1(int[] nums, int target) { // O(n^2) time
         int[] solution = new int[]{-1, -1};
 
@@ -30,9 +28,9 @@ public class TwoSum {
 
     public int[] twoSum2(int[] nums, int target) { // O(n) time
         Map<Integer, Integer> map = new HashMap<>();
-        for (int i = 0; i < nums.length; i++) { // O(n)
+        for (int i = 0; i < nums.length; i++) // O(n)
             map.put(nums[i], i); // Value, Index
-        }
+
         for (int i = 0; i < nums.length; i++) { // O(n)
             int complement = target - nums[i];
             if (map.containsKey(complement) && map.get(complement) != i) {
@@ -54,4 +52,3 @@ public class TwoSum {
         throw new IllegalArgumentException("No two sum solution");
     }
 }
-
