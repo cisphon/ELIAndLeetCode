@@ -12,6 +12,26 @@ public class Tools {
         System.out.println();
     }
 
+    public static void printMatrix(char[][] matrix) {
+        for (int r = 0; r < matrix.length; ++r) {
+            for (int c = 0; c < matrix[r].length; ++c) {
+                System.out.print(matrix[r][c] + " ");
+            }
+            System.out.println();
+        }
+        System.out.println();
+    }
+
+    public static void printMatrix(int[][] matrix) {
+        for (int r = 0; r < matrix.length; ++r) {
+            for (int c = 0; c < matrix[r].length; ++c) {
+                System.out.print(matrix[r][c] + " ");
+            }
+            System.out.println();
+        }
+        System.out.println();
+    }
+
     public static <E> void printArray(List<E> list) { // O(n) time
         for (E i : list) {
             System.out.print(i + " ");
