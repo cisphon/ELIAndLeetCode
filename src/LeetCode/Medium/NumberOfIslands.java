@@ -49,8 +49,6 @@ public class NumberOfIslands {
 
         grid[i][j] = '0'; // we are sinking the island.
 
-        printMatrix(grid);
-
         dfs(grid, i - 1, j); // up neighbor
         dfs(grid, i + 1, j); // down neighbor
         dfs(grid, i, j - 1); // left neighbor
