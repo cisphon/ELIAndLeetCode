@@ -1,6 +1,6 @@
 package LeetCode.Easy;
 
-import com.sun.source.tree.Tree;
+import LeetCode.TreeNode;
 
 public class SearchInABinarySearchTree {
     public static void main(String[] args) {

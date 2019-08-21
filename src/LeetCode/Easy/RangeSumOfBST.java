@@ -1,5 +1,7 @@
 package LeetCode.Easy;
 
+import LeetCode.TreeNode;
+
 public class RangeSumOfBST {
 
     public static void main(String[] args) {

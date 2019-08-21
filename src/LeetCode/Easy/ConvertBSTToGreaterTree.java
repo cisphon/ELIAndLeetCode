@@ -1,5 +1,7 @@
 package LeetCode.Easy;
 
+import LeetCode.TreeNode;
+
 public class ConvertBSTToGreaterTree {
     public static void main(String[] args) {
         TreeNode root = new TreeNode(2);

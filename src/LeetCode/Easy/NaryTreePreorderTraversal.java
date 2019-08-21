@@ -3,6 +3,7 @@ package LeetCode.Easy;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
+import java.util.Vector;
 
 public class NaryTreePreorderTraversal {
     public static void main(String[] args) {
@@ -10,7 +11,6 @@ public class NaryTreePreorderTraversal {
     }
 
     public static List<Integer> list = new ArrayList<>();
-
     public static List<Integer> preorder(Node root) {
         if (root == null)
             return list;
