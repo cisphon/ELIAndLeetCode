@@ -17,16 +17,10 @@ public class ToeplitzMatrix {
     }
 
     public static boolean isToeplitzMatrix(int[][] matrix) {
-        for (int r = 0; r < matrix.length - 1; ++r) {
-            for (int c = 0; c < matrix[r].length - 1; ++c) {
-                int curr = matrix[r][c];
-                int shiftBelow = matrix[r + 1][c + 1];
-                if (curr != shiftBelow) {
+        for (int r = 0; r < matrix.length - 1; ++r)
+            for (int c = 0; c < matrix[r].length - 1; ++c)
+                if (matrix[r][c] != matrix[r + 1][c + 1])
                     return false;
-                }
-            }
-        }
-
         return true;
     }
 }
