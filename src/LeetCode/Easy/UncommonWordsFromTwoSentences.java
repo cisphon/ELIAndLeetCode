@@ -15,6 +15,7 @@ public class UncommonWordsFromTwoSentences {
         Map<String, Integer> count = new HashMap<>();
         for (String w : (A + " " + B).split(" ")) // this allows you to process A and B at the same time.
             count.put(w, count.getOrDefault(w, 0) + 1);
+
         ArrayList<String> res = new ArrayList<>();
         for (String w : count.keySet())
             if (count.get(w) == 1)
