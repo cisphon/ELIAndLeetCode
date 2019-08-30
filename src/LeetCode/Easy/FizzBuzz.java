@@ -7,9 +7,7 @@ import static LeetCode.Tools.printArray;
 
 public class FizzBuzz {
     public static void main(String[] args) {
-        List<String> fizzBuzz = fizzBuzz(15);
-
-        printArray(fizzBuzz);
+        List<String> fizzBuzz = fizzBuzz(100);
     }
 
     public static List<String> fizzBuzz(int n) {
